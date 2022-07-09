@@ -19,6 +19,7 @@ btnSignup.onclick = function (e) {
 
   //Check validate password enter
   let passwordCheck = password.value.trim().match(regexPassword);
+  console.log(!passwordCheck);
   if (!passwordCheck) {
     password.parentElement.lastElementChild.classList.add("error");
     password.parentElement.lastElementChild.textContent =
